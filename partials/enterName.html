@@ -1,0 +1,6 @@
+<section class="container">
+	<a><img src="assets/images/dealGameTitleInitial.png" class="gamename" alt="Deal or Nodeal Logo"></a>
+	<input type="text" class="playername" ng-keyup="$event.keyCode==13 && play()"  ng-model="playerName">
+	<p class="error" ng-show="showError">Enter valid player name (name should contain only Alphabets & minimum 2 character length)</p>
+	<button class="play" ng-click="play()"></button>
+</section>

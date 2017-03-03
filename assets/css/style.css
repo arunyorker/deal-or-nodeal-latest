@@ -1,0 +1,519 @@
+li,h1,h2,h3,h4,h5,h6,span
+{
+
+	font-family: sans-serif;
+}
+ul li
+{
+	list-style-type: none;
+	cursor: pointer;
+}
+input:focus
+{
+	outline: none;
+}
+button:focus
+{
+	outline: none;
+}
+.clear
+{
+	clear: both;
+}
+body{
+	 background-image: url(../images/bg.png);
+	 background-repeat-y: no-repeat;
+}
+.container
+{
+
+	width: 1260px;
+	min-height: 901px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 10px 4px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+/*Page style for all pages ends here*/
+
+.gamename{
+	padding-top: 269px;
+	margin: 0 auto;
+}
+.playername{
+	width: 694px;
+	border-radius: 26px;
+	min-height: 82px;
+	background-color: #33b2ff;
+	padding-left: 20px;
+	margin: 0 auto;
+	font-size: 50px;
+	border: 3px solid #030013;
+	margin: 35px 0px 16px 0px;
+
+}
+.error
+{
+	color: #fff;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+
+.play{
+	background-image: url('../images/playBtn.png');
+	background-repeat:no-repeat;
+	width: 294px;
+	height: 85px;
+	border-radius: 24px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+/*Enter name Page style ends here*/
+
+.caseShow
+{
+	margin: 0 auto;
+	width: 966px;
+	
+}
+.caseShow li
+{
+	background-image: url("../images/case.png");
+	background-repeat: no-repeat;
+	width: 126px;
+	padding: 30px;
+	font-size: 47px;
+	font-weight: bold;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.caseShow li:nth-child(1) {
+	margin-left: 2px;
+}
+.yourCase
+{
+	float: left;
+	width: 275px;
+	height: 132px;
+	border: 4px solid #f3f200;
+	border-right: 0px;
+	box-sizing: border-box;
+}
+.yourCase span
+{
+	font-size: 26px;
+	color: white;
+	width: 100px;
+	float: left;
+	margin-top: 20px;
+}
+.yourCase div
+{
+	float: left;
+	background-image: url("../images/case.png");
+	width: 126px;
+	min-height: 102px;
+	font-size: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    font-weight: 900;
+    background-repeat: no-repeat;
+    font-family: sans-serif; 
+}
+.gameDetails
+{
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+.gameDetails h2
+{	
+	margin: 0 auto;
+    width: 549px;
+	background-color: #f3ec39;
+	text-align: center;
+	color: black;
+	font-size: 54px;
+	font-family:  cursive Georgia;
+	font-weight: bolder;
+	border-radius: 5px 5px 0px 0px;
+}
+.playerName1 {
+	height: 79px;
+	font-family: cursive Georgia;
+
+}
+
+.round
+{
+	float: left;
+	width: 980px;
+	height: 132px;
+	border:4px solid #f3f200;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.round h2
+{
+	color: white;
+	background-color: transparent;
+	font-size: 50px;
+	background: none;
+	font-family: cursive Georgia;
+	padding-right: 183px;
+}
+#caseNotify {
+	color: white;
+	background-color: transparent;
+	font-size: 50px;
+	background: none;
+	 font-weight: bold;
+    font-family: sans-serif;
+    padding-right: 103px;
+}
+.round h3
+{
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+	font-family: cursive Georgia;
+}
+.round h3 span
+{
+	color: white;
+	font-weight: bold;
+	font-size: 60px;
+}
+.round h4
+{
+	font-size: 50px;
+	padding-top: 20px;
+	color: #FFF;
+	font-weight: bold;
+}
+.round h5
+{
+	font-size: 44px;
+	color: #fff;
+	font-weight: bold;
+}
+.round>span
+{
+	font-size: 55px;
+	color: white;
+	display: inline-block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/*ChooseCase page ends here*/
+
+
+.selectCase
+{
+	text-align: center;
+	margin:0 auto;
+	width: 966px;
+}
+.container h1
+{
+	margin-bottom: 15px;
+}
+.selectCase ul{
+	margin-bottom: 12px;
+}
+.selectCase ul li:first-child{
+	padding-left: 10px;
+}
+/*initial style for case*/
+.boxbg
+{
+	background-image: url("../images/case.png");
+	background-repeat: no-repeat;
+	width: 126px;
+	vertical-align: bottom;
+	min-height: 102px;
+	padding-top: 30px;
+	padding-right: 20px\9;
+	padding-right: 20px\8;
+	margin-bottom: 47px;
+	font-size: 47px;
+	font-weight: bold;
+	margin-right: 12px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+/*For Edge support*/
+ *::-ms-backdrop, .boxbg
+ {
+ 	padding-right: 30px;
+ }
+/*style when case opened*/
+.open-case{
+	transition: all 2s;
+	transform: rotateY(360deg);
+	background-image: url('../images/case_open_status1.png');
+	background-repeat: no-repeat;
+	width: 126px;
+	padding: 0px;
+	min-height: 102px;
+    padding-top: 47px;
+    font-size: 24px;
+	color:white;
+	font-weight: bold;
+	margin-right: 12px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+/*style when case closed*/
+.hide-case
+{
+	font-size: 24px;
+	opacity: 0;
+}
+.bankerOffer
+{
+	margin: 0 auto;
+	width: 568px;
+	height:427px;
+	font-weight: bold;
+	margin-top: 147px;
+	font-size: 50px;
+	border-radius:20px;
+	border: 5px solid black;
+	background-color: #fff600;
+}
+.bankerOffer h2{
+	text-align: center;
+	color: #1b11fe;
+	    padding-top: 24px;
+	
+}
+.bankerOffer span{
+	margin: 30px 0px;
+	display: block;
+	text-align: center;
+	color: #000;
+}
+.bankerOffer span:before{
+	content: url('../images/inr.png');
+}
+.bankerOffer button{
+	background-color: transparent;
+	border: 0px;
+	width: 290px;
+	min-height: 83px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	margin-bottom: 25px;
+}
+.dealButton{
+	background-image: url('../images/dealBtn.png');
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+	
+}
+.noDealButton{
+	background-image: url('../images/noDealBtn.png');
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+/*bankeroffer section styles ends here*/
+.swapBox{
+	margin: 0 auto;
+	width: 675px;
+	margin-top: 100px;
+	padding: 50px 0px;
+	font-size: 60px;
+	font-weight: bold;
+
+}
+.swapBox h2{
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+}
+.swapBox span{
+	cursor: pointer;
+	background-image: url('../images/swapCase.png');
+	background-repeat: no-repeat;
+	float: left;
+	width: 243px;
+	min-height: 225px;
+	padding-top: 72px;
+	margin: 40px;
+}
+/*swapbox section styles ends here*/
+.leftAmount
+{
+	position: absolute;
+	top: 10px;
+	left: -265px;
+	padding: 7px;
+	width: 290px;
+	border: 4px solid #fbf509;
+}
+.rightAmount
+{
+	position: absolute;
+	top: 10px;
+	right: -265px;
+	padding: 7px;
+	width: 289px;
+	border: 4px solid #fbf509;
+
+}
+.amountLeftTransition
+{
+	left: 12px;
+	transition: all 2s;
+}
+.amountRightTransition
+{
+	right: 12px;
+	transition: all 2s;
+	font-weight: bold;
+} 
+
+.leftAmount li,.rightAmount li
+{
+	cursor: initial;
+	background: #dadd14;
+	background: linear-gradient(to right,#ecb80a,#dadd14,#f8ac09);
+	background: -webkit-linear-gradient(left,#ecb80a,#dadd14,#f8ac09);
+	background: -o-linear-linear-gradient(right,#ecb80a,#dadd14,#f8ac09);
+	background: -moz-linear-linear-gradient(right,#ecb80a,#dadd14,#f8ac09);
+	background: -ms-linear-linear-gradient(right,#ecb80a,#dadd14,#f8ac09);
+	border: 1px solid #473d1a;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size: 36px;
+	padding: 4px 35px 2px 15px;
+	text-align: right;
+	margin-bottom: 6px;
+	
+}
+.leftAmount li:before
+{
+	content: url("../images/inr.png");
+	float: left;
+}
+.rightAmount li:before
+{
+	content: url("../images/inr.png");
+	float: left;
+}
+.leftAmount li:last-child
+{
+	margin-bottom: 0px;
+}
+.rightAmount li:last-child
+{
+	margin-bottom: 0px;
+}
+.leftAmount .removedAmount,.rightAmount .removedAmount
+{
+	background: #463c12;
+	background: linear-gradient(#2d2607,#2c2c08,#2e2407);
+	background: -webkit-linear-gradient(#2d2607,#2c2c08,#2e2407);
+	background: -o-linear-linear-gradient(#2d2607,#2c2c08,#2e2407);
+	background: -moz-linear-linear-gradient(#2d2607,#2c2c08,#2e2407);
+}
+
+/*Game Page Styles end here*/
+
+
+
+
+.title{
+	margin-top: 20px;
+	width: 356px;	
+	margin: 0 auto;
+}
+
+.congratz{
+
+	font-size: 50px;
+	font-weight: bold;
+    width: 755px;
+    min-height: 635px;
+	background-image: url('../images/final_LabelBg.png');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding-top: 100px;
+}
+.congratz p{
+	padding-top:20px;
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+.congratz span{
+	display: block;	
+	text-transform: uppercase;
+
+}
+.congratzText{
+	padding-bottom: 20px;
+}
+.myAmt
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color:transparent;
+	color: #fff;
+	font-size: 44px;
+	padding: 10px;
+	font-weight: bold;
+}
+.text1{
+	color: black;
+	font-size: 65px;
+	margin-top: 140px;
+	font-family: sans-serif;
+		font-weight: bold;
+}
+.text2{
+	color: white;
+	font-size: 80px;
+	margin-top: 155px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.amountShow{
+    position: absolute;
+    width: 68px;
+    right: 60px;
+    bottom: 43px
+}
+.box1{
+	position: absolute;
+	top: 200px;
+	left: 450px;
+	width: 400px;
+	height: 324px;
+	text-align: center;
+	background: url("/assets/images/case_to_open.png") no-repeat;
+}
+.box2{
+	position: absolute;
+	top: 200px;
+	left: 450px;
+	width: 400px;
+	height: 324px;
+	text-align: center;
+	background: url("/assets/images/case_open_status.png") no-repeat;
+}
+/*Score page ends here*/

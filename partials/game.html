@@ -1,0 +1,63 @@
+<section class="container">
+	<ul class="leftAmount" ng-class="{amountLeftTransition:transition}" ng-show="IsVisible">
+		<li ng-repeat="amt in leftAmount" ng-class="{removedAmount:amt.selected}">{{amt.money|number}}</li>
+	</ul>
+	<!-- leftamount section ends here -->
+	<section class="selectCase">
+		<h1><a><img src="assets/images/titleTop.png" alt="Deal or Nodeal Logo"></a></h1>
+		<ul>
+			<li ng-repeat="number in boxNumbers" class="boxbg" ng-class="openCaseClass" ng-click="eliminateBox1(this)" ng-show="showSelectCase">
+				<img ng-src={{openINR}}>{{number}}</li>
+			<div ng-show="showBox" class="box1">
+				<p class="text1">{{displayNumber}}</p>
+			</div>
+			<div ng-show="showBox2" class="box2">
+				<img ng-src={{openINR}} ng-class="openCaseClass">
+				<img ng-src={{openINR}} src="assets/images/inr_case_open_status.png" class="text2">&nbsp&nbsp&nbsp<span class="text2">{{value}}</span>
+			</div>
+		</ul>
+		<!-- showSelectCase section ends here -->
+		<section class="bankerOffer" ng-show="showBankerOffer">
+			<h2>Banker's Offer</h2>
+			<span>{{bankerOffer|number}}</span>
+			<button class="dealButton" ng-click="deal()"></button>
+			<button class="noDealButton" ng-click="noDeal()"></button>
+			<div class="clear"></div>
+		</section>
+		<!-- bankerOffer section ends here -->
+		<section class="swapBox" ng-show="showSwapBox">
+			<h2>SWAP?</h2>
+			<span ng-click="showplayerBox()">{{playerBox}}</span>
+			<span ng-click="showoptionBox()">{{optionBox}}</span>
+		</section>
+		<!-- swapBox section ends here -->
+	</section>
+	<!-- selectCase section ends here -->
+	<ul class="rightAmount" ng-class="{amountRightTransition:transition}" ng-show="IsVisible">
+		<li ng-repeat="amt in rightAmount" ng-class="{removedAmount:amt.selected}">{{amt.money|number}}</li>
+	</ul>
+	<div class="clear"></div>
+	<!-- rightAmount section ends here -->
+	<section class="gameDetails">
+		<h2 class="playerName1">{{playerName}}</h2>
+		<section class="roundDetails">
+			<div class="yourCase">	<span>Your Case</span>
+				<div>{{playerBox}}</div>
+			</div>
+			<div class="round" ng-show="gameDetails">
+				<h2>Round-{{roundCount}}</h2>
+				<p id="caseNotify"><span>{{boxToBeSelected}}</span> cases to be selected</p>
+				<img src="assets/images/threelines.png" class="amountShow" ng-click="ShowHide()" />
+			</div>
+			<div class="round" ng-show="bankerOfferDetails">
+				<h2>Round-{{roundCount}}</h2>
+				<p id="caseNotify"><span>{{boxToBeSelected}}</span> cases to be selected</p>
+				<img src="assets/images/threelines.png" class="amountShow" ng-click="ShowHide()" />
+			</div>
+			<div class="round" ng-show="swapBoxDetails">
+				<div class="clear"></div>
+		</section>
+		<!-- roundDetails section ends here -->
+	</section>
+	<!-- gameDetails section ends here -->
+</section>
